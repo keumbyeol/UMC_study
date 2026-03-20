@@ -1,0 +1,111 @@
+/* 전체 배경 & 중앙 정렬 */
+body {
+  font-family: 'Apple SD Gothic Neo', sans-serif;
+  background-color: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+/* 투두리스트 박스 */
+.todo-container {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 320px;
+}
+
+h2 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 개별 리스트 아이템 */
+li {
+  background: #f1f3f5;
+  margin-bottom: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+/* 완료 버튼 */
+.complete-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.complete-btn:hover {
+  background: #43a047;
+}
+
+/* 완료된 상태의 스타일 */
+.completed {
+  background: #e8f5e9;
+  color: #888;
+}
+
+/* 제목 스타일 */
+.todo-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* 구분선 스타일 */
+hr {
+  border: 0;
+  height: 2px;
+  background: #f1f3f5;
+  margin: 20px 0;
+}
+
+/* 입력창(input) 스타일 */
+.todo-list {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* 패딩이 너비에 영향을 주지 않도록 설정 */
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+/* 입력창에 포커스(클릭) 되었을 때 효과 */
+.todo-list:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+  background-color: #fff;
+}
+
+/* 입력창 placeholder 색상 */
+.todo-list::placeholder {
+  color: #adb5bd;
+}
